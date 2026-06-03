@@ -10,7 +10,7 @@ Spend Tracker gives you a clear picture of where your money goes each month. The
 
 ## Demo
 
-![App Demo](Screenrecorder-2026-06-03-21-24-15-244-ezgif.com-video-to-gif-converter.gif)
+<img src="Screenrecorder-2026-06-03-21-24-15-244-ezgif.com-video-to-gif-converter.gif" width="320" alt="App Demo" />
 
 ---
 
