@@ -23,11 +23,14 @@ class CategoryScrollRow extends StatelessWidget {
     return FadeTransition(
       opacity: fadeAnimation,
       child: SizedBox(
-        height: 110,
+        height: 118,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(),
-          padding: const EdgeInsets.symmetric(horizontal: AppSpacing.screenPadding),
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.screenPadding,
+            vertical: 4,
+          ),
           itemCount: categories.length + 1,
           itemBuilder: (context, index) {
             if (index == 0) {

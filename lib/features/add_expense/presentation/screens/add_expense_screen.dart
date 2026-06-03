@@ -7,8 +7,10 @@ import '../widgets/amount_input_field.dart';
 import '../widgets/category_selector_grid.dart';
 import '../widgets/date_picker_field.dart';
 import '../../../spend_summary/domain/entities/transaction_entity.dart';
+import '../../../spend_summary/domain/entities/category_entity.dart';
 import '../../../spend_summary/presentation/bloc/spend_summary_bloc.dart';
 import '../../../spend_summary/presentation/bloc/spend_summary_event.dart';
+import '../../../spend_summary/presentation/bloc/spend_summary_state.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/theme/app_spacing.dart';
@@ -180,9 +182,11 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                       ],
                     ),
                     const SizedBox(height: AppSpacing.sm),
-                    BlocBuilder<SpendSummaryBloc, dynamic>(
+                    BlocBuilder<SpendSummaryBloc, SpendSummaryState>(
                       builder: (context, summaryState) {
-                        final categories = summaryState?.categories ?? [];
+                        final categories = summaryState is SpendSummaryLoaded
+                            ? summaryState.categories
+                            : <CategoryEntity>[];
                         return CategorySelectorGrid(
                           categories: categories,
                           selectedCategoryId: _selectedCategoryId,

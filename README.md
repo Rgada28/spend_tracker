@@ -8,24 +8,18 @@ Spend Tracker gives you a clear picture of where your money goes each month. The
 
 ---
 
+## Demo
+
+![App Demo](Screenrecorder-2026-06-03-21-24-15-244-ezgif.com-video-to-gif-converter.gif)
+
+---
+
 ## Screenshots
 
-> Add screenshots after running the app with `flutter run`. Suggested captures:
-
-| # | Screen | Description |
-|---|--------|-------------|
-| 1 | Splash | Animated Flutter logo zoom-in |
-| 2 | Spend Summary — Loading | Shimmer placeholder state |
-| 3 | Spend Summary — Loaded | Full header card + categories + transactions |
-| 4 | Spend Summary — Filtered | Category filter active (e.g. Food) |
-| 5 | Add Expense | Blank form with amount input |
-| 6 | Add Expense — Filled | Form with category selected and amount entered |
-
-<!-- Replace the rows below with actual screenshots -->
-<!-- ![Splash](screenshots/splash.png) -->
-<!-- ![Summary Loaded](screenshots/summary_loaded.png) -->
-<!-- ![Summary Filtered](screenshots/summary_filtered.png) -->
-<!-- ![Add Expense](screenshots/add_expense.png) -->
+| Spend Summary | Add Expense | Validation |
+|:---:|:---:|:---:|
+| ![Spend Summary](Screenshot_2026-06-03-21-23-36-366_com.jpeg) | ![Add Expense](Screenshot_2026-06-03-21-23-46-743_com.jpeg) | ![Validation](Screenshot_2026-06-03-21-23-54-687_com.jpeg) |
+| Monthly total (₹24,850), sparkline trend, category filter, and transactions list | Expense form with amount, description, category picker, date, and notes | Inline validation — amount, description, and category errors shown in real time |
 
 ---
 
